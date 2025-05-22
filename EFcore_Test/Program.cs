@@ -1,4 +1,4 @@
-﻿using EFcore_Test;
+﻿giusing EFcore_Test;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -7,22 +7,22 @@ internal class Program
     private static void Main(string[] args)
     {
         //transaction
-        //using(var context=new AppDbContext())
-        //  {
-        //      using(var transaction = context.Database.BeginTransaction())
-        //      {
+        using (var context = new AppDbContext())
+        {
+            using (var transaction = context.Database.BeginTransaction())
+            {
 
-        //       var from  = context.Wallets.Single(x => x.Id == 1);
-        //          var to = context.Wallets.Single(x => x.Id == 51);
-        //          var amout = 300m;
-        //          from.Balance -= amout;
-        //          to.Balance += amout;
-        //          context.SaveChanges();
-        //          transaction.Commit();
+                var from = context.Wallets.Single(x => x.Id == 1);
+                var to = context.Wallets.Single(x => x.Id == 51);
+                var amout = 300m;
+                from.Balance -= amout;
+                to.Balance += amout;
+                context.SaveChanges();
+                transaction.Commit();
 
-        //      }
-        //      Console.WriteLine("trans succesfully ");
-        //  }
+            }
+            Console.WriteLine("trans succesfully ");
+        }
 
         //quries
         //using (var context = new AppDbContext())
