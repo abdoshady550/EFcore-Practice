@@ -1,4 +1,4 @@
-# RESO Project 🚀
+# 🚀 RESO Project - Bills  
 
 Welcome to the **RESO** folder!  
 This project is a friendly playground for exploring Entity Framework Core (EF Core) and database operations in .NET 8.0.  
