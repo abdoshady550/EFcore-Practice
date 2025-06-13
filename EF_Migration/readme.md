@@ -1,4 +1,4 @@
-# 🚀EF_Migration - Academy_Projecy
+# 🚀EF_Migration - Academy_Project
 
 Welcome to the **EF_Migration** project!  
 This is a simple playground for practicing Entity Framework Core migrations and database interactions using .NET 8.0.  
